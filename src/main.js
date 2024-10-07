@@ -1,0 +1,11 @@
+import '../styles/modern.css';
+import '../styles/style.css';
+import '../styles/components/header.css';
+import '../styles/components/hero.css';
+import '../styles/components/segment-one.css';
+import '../styles/components/segment-two.css';
+import '../styles/components/segment-three.css';
+import '../styles/components/segment-four.css';
+import '../styles/components/segment-five.css';
+import '../styles/components/footer.css';
+import '../styles/util.css';
