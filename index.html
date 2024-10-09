@@ -10,9 +10,9 @@
       rel="stylesheet"
     />
 
-    <title>PayAPI Website Challenge</title>
+    <title>PayAPI Website</title>
   </head>
-  <body>
+  <body id="index-body">
     <header class="header container">
       <div class="header-main-box">
         <img
@@ -21,11 +21,13 @@
           alt=""
         />
         <div class="logo-nav-box">
-          <img
-            class="header-logo"
-            src="./public/shared/desktop/logo.svg"
-            alt=""
-          />
+          <a href="./index.html">
+            <img
+              class="header-logo"
+              src="./public/shared/desktop/logo.svg"
+              alt=""
+            />
+          </a>
           <nav class="navigation-box">
             <a class="header-navigation" href="./pricing.html">Pricing</a>
             <a class="header-navigation" href="./about.html">About</a>
@@ -40,6 +42,35 @@
         />
 
         <button class="header-button">Schedule a Demo</button>
+      </div>
+
+      <div class="mobile-nav">
+        <img
+          class="close-button"
+          id="button-close"
+          src="./public/shared/mobile/close.svg"
+          alt=""
+        />
+
+        <div class="moble-nav-content">
+          <nav>
+            <ul class="mobile-nav-menu">
+              <li class="nav-list-mobile">
+                <a class="mobile-nav-link" href="./pricing.html">Pricing</a>
+              </li>
+
+              <li class="nav-list-mobile">
+                <a class="mobile-nav-link" href="./about.html">About</a>
+              </li>
+
+              <li class="nav-list-mobile">
+                <a class="mobile-nav-link" href="./contact.html">Contact</a>
+              </li>
+
+              <button class="mobile-nav-button">Schedule a Demo</button>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
 
@@ -60,13 +91,20 @@
               <input
                 type="text"
                 class="hero-email"
-                id=""
+                id="email-input"
                 placeholder="Enter email address "
               />
 
-              <button class="hero-button">Schedule a Demo</button>
+              <button id="email-schedule-button" class="hero-button">
+                Schedule a Demo
+              </button>
             </div>
-            <h4 class="hero-end">Have any questions? <b>Contact Us</b></h4>
+            <h4 class="hero-end">
+              Have any questions?
+              <a class="hero-end-2" href="./contact.html">
+                <b>Contact Us</b>
+              </a>
+            </h4>
           </div>
         </div>
       </section>
@@ -115,7 +153,9 @@
             experiences for their users.
           </p>
           <div class="segment-button-box">
-            <button class="segment-one-button">About Us</button>
+            <a href="./about.html">
+              <button class="segment-one-button">About Us</button>
+            </a>
           </div>
         </div>
       </section>
@@ -203,11 +243,13 @@
         <input
           type="text"
           class="hero-email"
-          id=""
+          id="email-input-two"
           placeholder="Enter email address "
         />
 
-        <button class="segment-five-button">Schedule a Demo</button>
+        <button id="email-schedule-button-two" class="segment-five-button">
+          Schedule a Demo
+        </button>
       </section>
     </main>
     <footer class="footer container">

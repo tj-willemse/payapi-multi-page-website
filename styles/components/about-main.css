@@ -1,0 +1,252 @@
+.about-main-title {
+  text-align: center;
+  color: var(--clr-san-juan-blue);
+  max-width: 25ch;
+  padding-top: 30px;
+  margin: auto;
+  font-family: var(--font-primary);
+  font-weight: 400;
+}
+.about-sub-titles {
+  color: var(--clr-san-juan-blue);
+  font-family: var(--font-primary);
+  font-weight: 100;
+}
+
+.about-button {
+  width: 250px;
+  padding: 10px;
+  color: var(--clr-link-water-white);
+  background-color: var(--clr-dark-pink);
+  font-size: var(--size-xs);
+  font-weight: bold;
+  border-radius: 30px;
+}
+.about-button:active {
+  background-color: #f9a8d4;
+}
+
+.about-main-info-boxes {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about-paragraphs {
+  margin-top: 10px;
+  color: var(--clr-light-san-juan-blue);
+  text-align: center;
+  font-size: var(--size-xs);
+  max-width: 35ch;
+}
+.about-img-mobile {
+  object-fit: contain;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.about-img-tab {
+  display: none;
+}
+.about-img-desktop {
+  display: none;
+}
+
+.about-info-main-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  gap: 1rem;
+  padding: 10px;
+  border-top: 0.1px solid lightgray;
+  border-bottom: 0.1px solid lightgray;
+}
+.about-info-boxes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.info-title {
+  color: var(--clr-light-san-juan-blue);
+  font-size: var(--size-xs);
+  font-weight: 300;
+}
+.info-sub {
+  color: var(--clr-dark-pink);
+}
+
+/* xs */
+@media (min-width: 475px) {
+  .about-button {
+    width: 300px;
+  }
+  .about-main-title {
+    font-size: var(--size-3xl);
+  }
+  .about-sub-titles {
+    font-size: var(--size-xl);
+  }
+  .about-paragraphs {
+    font-size: var(--size-sm);
+    max-width: 35ch;
+  }
+  .info-title {
+    font-size: var(--size-sm);
+  }
+  .info-sub {
+    font-size: var(--size-3xl);
+  }
+  .about-img-mobile {
+    margin-top: 20px;
+    object-fit: contain;
+  }
+}
+
+/* Sm */
+@media (min-width: 640px) {
+  .about-main-title {
+    font-size: var(--size-4xl);
+  }
+  .about-main-info-boxes {
+    flex-direction: row;
+    gap: 2rem;
+    align-items: start;
+  }
+
+  .about-sub-titles {
+    margin-top: 5px;
+  }
+  .about-paragraphs {
+    font-size: var(--size-sm);
+    max-width: 50ch;
+    text-align: start;
+  }
+  .about-img-mobile {
+    display: none;
+  }
+  .about-img-tab {
+    display: block;
+    width: 100%;
+  }
+  .about-info-main-box {
+    flex-direction: row;
+    gap: 3rem;
+  }
+  .about-button {
+    position: absolute;
+    top: 178.6%;
+    left: 64%;
+    width: 150px;
+  }
+}
+
+/* md */
+@media (min-width: 768px) {
+  .about-button {
+    top: 185%;
+    left: 60%;
+  }
+}
+
+/* Lg */
+@media (min-width: 1024px) {
+  .about-main-title {
+    font-size: var(--size-5xl);
+    text-align: start;
+  }
+
+  .about-sub-titles {
+    font-size: var(--size-2xl);
+    margin-top: 5px;
+  }
+  .about-paragraphs {
+    font-size: var(--size-base);
+    max-width: 50ch;
+    text-align: start;
+  }
+  .about-img-mobile {
+    display: none;
+  }
+  .about-img-tab {
+    display: none;
+  }
+  .about-img-desktop {
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .about-button {
+    top: 209.9%;
+    left: 80%;
+  }
+
+  .info-title {
+    font-size: var(--size-base);
+  }
+  .info-sub {
+    font-size: var(--size-4xl);
+  }
+  .about-info-main-box {
+    gap: 10rem;
+  }
+}
+
+/* xL */
+@media (min-width: 1280px) {
+  .about-button {
+    top: 223.5%;
+    left: 80%;
+  }
+}
+
+/* 2xL */
+@media (min-width: 1536px) {
+  .about-main-title {
+    font-size: var(--size-7xl);
+    margin-left: 350px;
+    max-width: 25ch;
+  }
+  .about-main-info-boxes {
+    margin-right: 150px;
+    gap: 5rem;
+  }
+
+  .about-sub-titles {
+    font-size: var(--size-3xl);
+    margin-top: 5px;
+  }
+  .about-paragraphs {
+    font-size: var(--size-lg);
+    max-width: 60ch;
+    text-align: start;
+  }
+
+  .about-img-desktop {
+    display: block;
+    width: 100%;
+    margin-top: 90px;
+    margin-bottom: 60px;
+  }
+
+  .about-button {
+    top: 232.6%;
+    left: 80%;
+  }
+
+  .info-title {
+    font-size: var(--size-base);
+  }
+  .info-sub {
+    font-size: var(--size-6xl);
+  }
+  .about-info-main-box {
+    gap: 19rem;
+    margin-bottom: 20px;
+    width: 80%;
+  }
+}

@@ -12,7 +12,7 @@
 
   --clr-mirage-blue: #1b262f;
 
-  --clr-charm-pink: #da6d97;
+  --clr-charm-pink: #f9a8d4;
 
   --clr-light-san-juan-blue: #6c8294;
 
@@ -113,4 +113,16 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background-color: var(--clr-slate50);
   outline: 1px solid var(--clr-slate50);
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px white inset;
+  box-shadow: 0 0 0 1000px white inset;
+  -webkit-text-fill-color: black;
+}
+
+textarea:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px white inset;
+  box-shadow: 0 0 0 1000px white inset;
+  -webkit-text-fill-color: black;
 }

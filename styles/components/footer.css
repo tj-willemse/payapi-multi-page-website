@@ -39,6 +39,11 @@
 .footer-social {
   width: 20px;
   height: 20px;
+  cursor: pointer;
+}
+.footer-social:active {
+  fill: red;
+  background-color: var(--clr-charm-pink);
 }
 
 /* xs */

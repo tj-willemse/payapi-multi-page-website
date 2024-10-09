@@ -11,19 +11,303 @@
       rel="stylesheet"
     />
 
-    <title>PayAPI Website Challenge</title>
+    <title>PayAPI Website</title>
   </head>
 
   <body>
-    Pricing About Contact Schedule a Demo Pricing Free Plan Build and test using
-    our core set of products with up to 100 API requests $0.00 Transactions Auth
-    Identity Investments Assets Liabilities Income Request Access Basic Plan
-    Launch your project with unlimited requests and no contractual minimums
-    $249.00 Transactions Auth Identity Investments Assets Liabilities Income
-    Request Access Premium Plan Get tailored solutions, volume pricing, and
-    dedicated support for your team $499.00 Transactions Auth Identity
-    Investments Assets Liabilities Income Request Access Ready to start? Enter
-    email address Schedule a Demo Pricing About Contact
+    <header class="header container">
+      <div class="header-main-box">
+        <!-- <img
+        class="header-circle"
+          src="./public/shared/desktop/bg-pattern-circle.svg"
+          alt=""
+        /> -->
+        <div class="logo-nav-box">
+          <a href="./index.html">
+            <img
+              class="header-logo"
+              src="./public/shared/desktop/logo.svg"
+              alt=""
+            />
+          </a>
+          <nav class="navigation-box">
+            <a class="header-navigation" href="./pricing.html">Pricing</a>
+            <a class="header-navigation" href="./about.html">About</a>
+            <a class="header-navigation" href="./contact.html">Contact</a>
+          </nav>
+        </div>
+
+        <img
+          class="mobile-menu-button"
+          src="./public/shared/mobile/menu.svg"
+          alt=""
+        />
+
+        <button class="header-button">Schedule a Demo</button>
+      </div>
+
+      <div class="mobile-nav">
+        <img
+          class="close-button"
+          id="button-close"
+          src="./public/shared/mobile/close.svg"
+          alt=""
+        />
+
+        <div class="moble-nav-content">
+          <nav>
+            <ul class="mobile-nav-menu">
+              <li class="nav-list-mobile">
+                <a class="mobile-nav-link" href="./pricing.html">Pricing</a>
+              </li>
+
+              <li class="nav-list-mobile">
+                <a class="mobile-nav-link" href="./about.html">About</a>
+              </li>
+
+              <li class="nav-list-mobile">
+                <a class="mobile-nav-link" href="./contact.html">Contact</a>
+              </li>
+
+              <button class="mobile-nav-button">Schedule a Demo</button>
+            </ul>
+          </nav>
+        </div>
+
+    </header>
+    <main>
+      <h1 class="pricing-main-title">Pricing</h1>
+
+      <section class="pricing-hero container">
+        <div>
+          <h2 class="pricing-plan-title">Free Plan</h2>
+          <p class="pricing-plan-paragraph">
+            Build and test using our core set of products with up to 100 API
+            requests
+          </p>
+          <h1 class="pricing-plan-price">$0.00</h1>
+
+          <ul class="pricing-list-box">
+            <div class="pricing-content-check-icon-box">
+              <img
+                class="pricing-checkmark-img"
+                src="./public/shared/desktop/icon-check.svg"
+                alt=""
+              />
+              <li class="pricing-active">Transactions</li>
+            </div>
+
+            <div class="pricing-content-check-icon-box">
+              <img
+                class="pricing-checkmark-img"
+                src="./public/shared/desktop/icon-check.svg"
+                alt=""
+              />
+              <li class="pricing-active">Auth</li>
+            </div>
+
+            <div class="pricing-content-check-icon-box">
+              <img
+                class="pricing-checkmark-img"
+                src="./public/shared/desktop/icon-check.svg"
+                alt=""
+              />
+              <li>Identity</li>
+            </div>
+            <div class="pricing-content-check-icon-box">
+              <li class="pricing-locked">Investments</li>
+            </div>
+            <div class="pricing-content-check-icon-box">
+              <li class="pricing-locked">Assets</li>
+            </div>
+            <div class="pricing-content-check-icon-box">
+              <li class="pricing-locked">Liabilities</li>
+            </div>
+            <div class="pricing-content-check-icon-box">
+              <li class="pricing-locked">Income</li>
+            </div>
+          </ul>
+          <button class="pricing-button">Request Access</button>
+        </div>
+
+        <div>
+          <h2 class="pricing-plan-title">Basic Plan</h2>
+          <p class="pricing-plan-paragraph">
+            Launch your project with unlimited requests and no contractual
+            minimums
+          </p>
+          <h1 class="pricing-plan-price">$249.00</h1>
+
+          <ul class="pricing-list-box">
+            <div class="pricing-content-check-icon-box">
+              <img
+                class="pricing-checkmark-img"
+                src="./public/shared/desktop/icon-check.svg"
+                alt=""
+              />
+              <li class="pricing-active">Transactions</li>
+            </div>
+            <div class="pricing-content-check-icon-box">
+              <img
+                class="pricing-checkmark-img"
+                src="./public/shared/desktop/icon-check.svg"
+                alt=""
+              />
+              <li class="pricing-active">Auth</li>
+            </div>
+            <div class="pricing-content-check-icon-box">
+              <img
+                class="pricing-checkmark-img"
+                src="./public/shared/desktop/icon-check.svg"
+                alt=""
+              />
+              <li class="pricing-active">Identity</li>
+            </div>
+            <div class="pricing-content-check-icon-box">
+              <img
+                class="pricing-checkmark-img"
+                src="./public/shared/desktop/icon-check.svg"
+                alt=""
+              />
+              <li class="pricing-active">Investments</li>
+            </div>
+            <div class="pricing-content-check-icon-box">
+              <img
+                class="pricing-checkmark-img"
+                src="./public/shared/desktop/icon-check.svg"
+                alt=""
+              />
+              <li class="pricing-active">Assets</li>
+            </div>
+            <div class="pricing-content-check-icon-box">
+              <li class="pricing-locked">Liabilities</li>
+            </div>
+            <div class="pricing-content-check-icon-box">
+              <li class="pricing-locked">Income</li>
+            </div>
+          </ul>
+          <button class="pricing-button">Request Access</button>
+        </div>
+
+        <div>
+          <h2 class="pricing-plan-title">Premium Plan</h2>
+          <p class="pricing-plan-paragraph">
+            Get tailored solutions, volume pricing, and dedicated support for
+            your team
+          </p>
+          <h1 class="pricing-plan-price">$499.00</h1>
+
+          <ul class="pricing-list-box">
+            <div class="pricing-content-check-icon-box">
+              <img
+                class="pricing-checkmark-img"
+                src="./public/shared/desktop/icon-check.svg"
+                alt=""
+              />
+              <li class="pricing-active">Transactions</li>
+            </div>
+            <div class="pricing-content-check-icon-box">
+              <img
+                class="pricing-checkmark-img"
+                src="./public/shared/desktop/icon-check.svg"
+                alt=""
+              />
+              <li class="pricing-active">Auth</li>
+            </div>
+            <div class="pricing-content-check-icon-box">
+              <img
+                class="pricing-checkmark-img"
+                src="./public/shared/desktop/icon-check.svg"
+                alt=""
+              />
+              <li class="pricing-active">Identity</li>
+            </div>
+            <div class="pricing-content-check-icon-box">
+              <img
+                class="pricing-checkmark-img"
+                src="./public/shared/desktop/icon-check.svg"
+                alt=""
+              />
+              <li class="pricing-active">Investments</li>
+            </div>
+            <div class="pricing-content-check-icon-box">
+              <img
+                class="pricing-checkmark-img"
+                src="./public/shared/desktop/icon-check.svg"
+                alt=""
+              />
+              <li class="pricing-active">Assets</li>
+            </div>
+            <div class="pricing-content-check-icon-box">
+              <img
+                class="pricing-checkmark-img"
+                src="./public/shared/desktop/icon-check.svg"
+                alt=""
+              />
+              <li class="pricing-active">Liabilities</li>
+            </div>
+            <div class="pricing-content-check-icon-box">
+              <img
+                class="pricing-checkmark-img"
+                src="./public/shared/desktop/icon-check.svg"
+                alt=""
+              />
+              <li class="pricing-active">Income</li>
+            </div>
+          </ul>
+          <button class="pricing-button">Request Access</button>
+        </div>
+      </section>
+    </main>
+
+    <section class="segment-five container">
+      <h1 class="segment-five-title">Ready to start?</h1>
+
+      <input
+        type="text"
+        class="hero-email"
+        id="email-input"
+        placeholder="Enter email address "
+      />
+
+      <button id="email-schedule-button" class="pricing-segment-one-button">Schedule a Demo</button>
+    </section>
+
+    <footer class="footer container">
+      <div class="main-footer-box">
+        <div class="social-box-footer-content">
+          <img
+            class="footer-logo"
+            src="./public/shared/desktop/logo-2.svg"
+            alt=""
+          />
+          <nav class="footer-navigation-box">
+            <a class="footer-navigation" href="./pricing.html">Pricing</a>
+            <a class="footer-navigation" href="./about.html">About</a>
+            <a class="footer-navigation" href="./contact.html">Contact</a>
+          </nav>
+        </div>
+
+        <div class="social-box">
+          <img
+            class="footer-social"
+            src="./public/shared/desktop/facebook.svg"
+            alt=""
+          />
+          <img
+            class="footer-social"
+            src="./public/shared/desktop/twitter.svg"
+            alt=""
+          />
+          <img
+            class="footer-social"
+            src="./public/shared/desktop/linkedin.svg"
+            alt=""
+          />
+        </div>
+      </div>
+    </footer>
+
     <script type="module" src="./src/main.js"></script>
   </body>
 </html>

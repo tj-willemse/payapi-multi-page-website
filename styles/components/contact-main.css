@@ -1,0 +1,244 @@
+.contact-main-title {
+  color: var(--clr-san-juan-blue);
+  text-align: center;
+  font-family: var(--font-primary);
+  font-size: var(--size-3xl);
+  max-width: 20ch;
+  margin: auto;
+  font-weight: 300;
+  padding-top: 40px;
+}
+
+.contact-button {
+  width: 250px;
+  padding: 10px;
+  color: var(--clr-link-water-white);
+  background-color: var(--clr-dark-pink);
+  font-size: var(--size-xs);
+  font-weight: bold;
+  border-radius: 30px;
+}
+
+.contact-button:active {
+  background-color: #f9a8d4;
+}
+.contact-input-box {
+  display: flex;
+  flex-direction: column;
+
+  gap: 1rem;
+  padding: 20px;
+}
+
+.error-message {
+  font-size: var(--size-xxs);
+
+  padding-left: 10px;
+}
+.contact-input {
+  border: none;
+  padding: 10px;
+  border-bottom: 0.1px solid lightgray;
+  font-size: var(--size-xs);
+  background-color: transparent;
+  width: 100%;
+}
+.contact-input:focus {
+  border: none;
+  outline: none;
+}
+
+.contact-input::placeholder {
+  color: var(--clr-san-juan-blue);
+}
+
+.checkbox-box {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.contact-input-paragraph {
+  color: var(--clr-mirage-blue);
+  font-size: var(--size-xs);
+}
+
+.contact-submit-button {
+  color: var(--clr-mirage-blue);
+  border: 1px solid var(--clr-mirage-blue);
+  border-radius: 30px;
+  padding: 5px;
+  font-size: var(--size-xs);
+  width: 100px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.contact-submit-button:active {
+  color: var(--clr-link-water-white);
+  background-color: var(--clr-mirage-blue);
+}
+.contact-info-title {
+  color: var(--clr-light-san-juan-blue);
+  text-align: center;
+  font-family: var(--font-primary);
+  font-size: var(--size-xl);
+  max-width: 25ch;
+  margin: auto;
+  font-weight: 100;
+}
+
+.contact-segment-one-images {
+  object-fit: contain;
+  width: 100px;
+  height: 100px;
+}
+
+.contact-segment-one-img-box {
+  display: grid;
+  grid-template-columns: repeat(2, 100px);
+  grid-template-rows: repeat(3, 30px);
+  gap: 2rem;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+/* xs */
+@media (min-width: 475px) {
+  .contact-button {
+    width: 300px;
+  }
+}
+
+/* Sm */
+@media (min-width: 640px) {
+  .contact-main-title {
+    font-size: var(--size-4xl);
+  }
+
+  .contact-input {
+    width: 330px;
+  }
+  .contact-input-paragraph {
+    max-width: 40ch;
+    font-size: var(--size-xs);
+  }
+  .contact-input-box {
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  .contact-info-title {
+    max-width: 35ch;
+  }
+  .contact-segment-one-img-box {
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(2, 30px);
+  }
+  .contact-button {
+    position: absolute;
+    top: 145.2%;
+    left: 60%;
+    width: 150px;
+  }
+}
+
+/* md */
+/* @media (min-width: 768px) {}  */
+
+/* Lg */
+@media (min-width: 1024px) {
+  .contact-main-title {
+    text-align: start;
+    font-size: var(--size-5xl);
+    margin-left: 135px;
+    max-width: 25ch;
+  }
+
+  .segment-one-contact {
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+  }
+  .main-contact-box {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .contact-submit-button {
+    margin-top: 10px;
+    margin-left: -220px;
+  }
+  .contact-info-title {
+    font-size: var(--size-2xl);
+    max-width: 30ch;
+    text-align: start;
+  }
+  .contact-button {
+    top: 118%;
+    left: 82%;
+  }
+}
+
+/* xL */
+@media (min-width: 1280px) {
+  .contact-main-title {
+    margin-left: 150px;
+  }
+
+  .contact-submit-button {
+    margin-top: 10px;
+    margin-left: -220px;
+  }
+
+  .contact-button {
+    top: 96.4%;
+    left: 82%;
+  }
+
+  .segment-one-contact {
+    display: flex;
+    align-items: center;
+    padding-left: 120px;
+  }
+  .main-contact-box {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+  }
+}
+
+/* 2xL */
+@media (min-width: 1536px) {
+  .contact-main-title {
+    text-align: start;
+    font-size: var(--size-6xl);
+    margin-left: 135px;
+    max-width: 25ch;
+  }
+
+  .segment-one-contact {
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+  }
+  .main-contact-box {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .contact-submit-button {
+    margin-top: 10px;
+    margin-left: -220px;
+  }
+  .contact-info-title {
+    font-size: var(--size-4xl);
+  }
+  .contact-button {
+    top: 90.4%;
+    left: 82%;
+  }
+  .contact-input {
+    font-size: var(--size-base);
+  }
+}

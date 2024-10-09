@@ -44,6 +44,10 @@
 .hero-email::placeholder {
   color: var(--clr-light-san-juan-blue);
 }
+.hero-email:focus {
+  border: none;
+  outline: none;
+}
 
 .hero-button {
   width: 250px;
@@ -54,10 +58,19 @@
   font-weight: bold;
   border-radius: 30px;
 }
+.hero-button:active {
+  background-color: #f9a8d4;
+}
 .hero-end {
   color: var(--clr-light-san-juan-blue);
   font-size: var(--size-sm);
 }
+
+.hero-end-2 {
+  text-decoration: none;
+  font-weight: bold;
+}
+
 .hero-email-button-box {
   display: flex;
   flex-direction: column;
@@ -229,7 +242,7 @@
 }
 
 /* 2xL */
-@media (min-width: 1920px) {
+@media (min-width: 1536px) {
   .hero-phone-img {
     height: 650px;
   }
@@ -244,7 +257,7 @@
   }
   .hero-button {
     left: 31%;
-    top: 62.1%;
+    top: 61.7%;
     font-size: var(--size-sm);
   }
 
