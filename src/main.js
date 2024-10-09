@@ -40,6 +40,7 @@ const checkboxInput = document.getElementById('checkbox-input');
 // invalid fields
 const nameInavlid = document.getElementById('name-invalid');
 const emailInavlid = document.getElementById('email-invalid');
+const invalidEmailText = document.getElementById('email-invalid-second');
 const companyInavlid = document.getElementById('company-invalid');
 const titleInavlid = document.getElementById('title-invalid');
 const messageInavlid = document.getElementById('message-invalid');
@@ -122,10 +123,11 @@ function checkEmail() {
 
   emailInput.style.borderBottom = '';
   emailInavlid.style.display = 'none';
+  invalidEmailText.style.display = 'none';
 
   if (!userEmail.includes('@') || !localPart || !domainPart) {
     emailInput.style.borderBottom = '1px solid red';
-    emailInavlid.style.display = 'block';
+    invalidEmailText.style.display = 'block';
     console.log('Invalid email: missing "@" or local/domain part');
     return false;
   }
@@ -133,7 +135,7 @@ function checkEmail() {
   const atSymbolCount = userEmail.split('@').length - 1;
   if (atSymbolCount !== 1) {
     emailInput.style.borderBottom = '1px solid red';
-    emailInavlid.style.display = 'block';
+    invalidEmailText.style.display = 'none';
     console.log('Invalid email: more than one "@" symbol');
     return false;
   }
